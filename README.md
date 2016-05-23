@@ -4,8 +4,6 @@
 ==============
 
 
-----------
-
 **DEFINITION:**
 
 	
@@ -17,7 +15,6 @@ It's *usually* smart to avoid global variables and objects, because they break w
 However, there are certain cases where a global object is useful. That is where **singletons** come into play.
 
 
-----------
 
 **ADVANTAGES:**
 
@@ -28,19 +25,10 @@ However, there are certain cases where a global object is useful. That is where 
 **DISADVANTAGES:**
 
  - Once instantiated, hardly ever "reset"
- - Harder to unit test
- - May introduce hidden dependencies
-
- 
-
- 
+ - Harder to unit test, may introduce hidden dependencies
 
 
-----------
-
-
- 
-
+==============
           var Singleton = (function () {
     	    var instance;
     		function createInstance() {
@@ -67,7 +55,7 @@ However, there are certain cases where a global object is useful. That is where 
         }
 
 
-----------
+
 
 You may recognize other design patterns within this singleton. Singletons are a specialization of the **Module** pattern. The Module pattern is the basis of all popular JavaScript libraries (jQuery, Backbone, Ember, etc.). This example is also implemented as an **IIFE** (immediately invoked function expression). 
 
@@ -75,32 +63,21 @@ Let's talk about the *getInstance* method. It is the singleton's globally access
 
 As you can see if you run the code, *instance1* and *instance2* are referring to the exact same instance, as opposed to a copy of it.
 
-----------
+
 
 **WHEN SHOULD I USE A SINGLETON?**
-------------------------------
+
 *A Singleton candidate must satisfy these three requirements:*
 
 >  1. controls concurrent access to a shared resource
 >  2. access to the resource will be requested from multiple, disparate parts of the system
 >  3. there can only be one object
 
-----------
 
 
-**Some common use cases for Singletons:**
-
->  - database connections
->  - data loggers
->  - configuration files
->  - printer spooler (that thing that manages print jobs being sent to the printer)
->  - device controllers
-
-
-----------
 
 **SINGLETONS IN THE WILD!**
------------------------
+
 
 >  **Singletons can be found in these libraries:**
 >  
@@ -118,7 +95,8 @@ As you can see if you run the code, *instance1* and *instance2* are referring to
  >- device controllers
 
 
-----------
+
+
 **Additional Resources:**
 
 https://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript
