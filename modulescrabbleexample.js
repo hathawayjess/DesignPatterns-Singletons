@@ -28,7 +28,7 @@ function beginNewGame() {
 var player = beginNewGame();
 player.getALetter();													  //now we can access the letters array 
 player.showLetters();  													  //without making it globally accessible
-
+var player2 = beginNewGame();
 
 //What if we want multiple players?
 //The problem with this is each player will have their own bag
