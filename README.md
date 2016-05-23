@@ -16,7 +16,6 @@ However, there are certain cases where a global object is useful. That is where 
 
 
 
-
 **ADVANTAGES:**
 
  - Reduced memory footprint
@@ -72,7 +71,6 @@ Let's talk about the *getInstance* method. It is the singleton's globally access
 
 As you can see if you run the code, *instance1* and *instance2* are referring to the exact same instance, as opposed to a copy of it.
 
-----------
 
 **WHEN SHOULD I USE A SINGLETON?**
 
@@ -81,7 +79,6 @@ As you can see if you run the code, *instance1* and *instance2* are referring to
 >  1. controls concurrent access to a shared resource
 >  2. access to the resource will be requested from multiple, disparate parts of the system
 >  3. there can only be one object
-
 
 
 
@@ -104,7 +101,6 @@ As you can see if you run the code, *instance1* and *instance2* are referring to
  >- device controllers
 
 
-----------
 **Additional Resources:**
 
 https://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript
