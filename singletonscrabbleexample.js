@@ -37,14 +37,14 @@ var Scrabble = (function() {
 	}
 
 	return {
-		getBag : getInstance             //globally available access point
+		getInstance : getInstance             //globally available access point
 	};
 
 })();
 
-var player1 = Scrabble.getBag();
-var player2 = Scrabble.getBag();
-var player3 = Scrabble.getBag();
+var player1 = Scrabble.getInstance();
+var player2 = Scrabble.getInstance();
+var player3 = Scrabble.getInstance();
 console.log(player1);
 console.log(player1 === player2);
 
