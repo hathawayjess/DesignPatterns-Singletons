@@ -25,17 +25,8 @@ However, there are certain cases where a global object is useful. That is where 
 **DISADVANTAGES:**
 
  - Once instantiated, hardly ever "reset"
- - Harder to unit test
- - May introduce hidden dependencies
+ - Harder to unit test, may introduce hidden dependencies
 
- 
-
- 
-
-
-
-
- 
 
           var Singleton = (function () {
     	    var instance;
@@ -72,6 +63,7 @@ Let's talk about the *getInstance* method. It is the singleton's globally access
 As you can see if you run the code, *instance1* and *instance2* are referring to the exact same instance, as opposed to a copy of it.
 
 
+
 **WHEN SHOULD I USE A SINGLETON?**
 
 *A Singleton candidate must satisfy these three requirements:*
@@ -82,8 +74,9 @@ As you can see if you run the code, *instance1* and *instance2* are referring to
 
 
 
+
 **SINGLETONS IN THE WILD!**
------------------------
+
 
 >  **Singletons can be found in these libraries:**
 >  
@@ -99,6 +92,8 @@ As you can see if you run the code, *instance1* and *instance2* are referring to
  >- configuration files
  >- printer spooler
  >- device controllers
+
+
 
 
 **Additional Resources:**
