@@ -28,6 +28,7 @@ However, there are certain cases where a global object is useful. That is where 
  - Harder to unit test, may introduce hidden dependencies
 
 
+==============
           var Singleton = (function () {
     	    var instance;
     		function createInstance() {
